@@ -1,11 +1,5 @@
 module.exports = {
     reactStrictMode: true,
-    experimental: {
-      runtime: 'experimental-edge',
-      api: {
-        externalResolver: true,
-      },
-    },
     images: {
       domains: ['www.pngall.com', 'm.media-amazon.com', 'static.wikia.nocookie.net', 'example-domain.com'],
     },
