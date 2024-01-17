@@ -1,0 +1,98 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 42px;
+    font-weight: bold;
+    color: #226F54;
+    width: 60vw;
+    text-align: center;
+    border-top: 1px solid #BBB;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    width: 40vw;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+.phone_number{
+    margin-bottom: 10px;
+}
+
+.changer{
+    display: flex;
+}
+
+.input{
+    min-height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+.save_changes{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #226F54;
+    color: #fff;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.save_changes:hover{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.delete_acc{
+    width: 40vw;
+    color: #DA2C38;
+    cursor: pointer;
+}
+
+.delete_acc:hover{
+    text-decoration: underline;
+}
+
+.save_button{
+    position: relative;
+    width: 300px;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    background-color: #87C38F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all .1s ease-in;
+    align-self: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+
+.save_button:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}

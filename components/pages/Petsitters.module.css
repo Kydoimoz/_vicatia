@@ -1,0 +1,82 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+._seperator{
+    width: 100%;
+    height: 1px;
+    background-color: #b5b5b5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main{
+    min-height: calc(100vh - 160px);
+    width: 100%;
+    align-self: flex-start;
+    padding: 20px;
+    display: flex;
+}
+
+.filter_container{
+    padding-top: 20px;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.results_container{
+    width: 100%;
+}
+
+.input{
+    min-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 20px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 6px;
+    cursor: auto;
+
+    padding-left: 15px;
+    transition: all .6s ease-in;
+}
+
+.input:focus{
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.ad_placeholder_portrait_format{
+    width: 100%;
+    height: 100vh;
+    background-color: #b5b5b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media(max-width: 950px){
+    .filter_container{
+        display: none;
+    }
+
+    .name{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 350px){
+    .name{
+        margin-bottom: 10px;
+    }
+  }

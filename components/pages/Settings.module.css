@@ -1,0 +1,133 @@
+
+.p_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page_title{
+    font-size: 42px;
+    font-weight: bold;
+    color: #226F54;
+    width: 60vw;
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 1px solid #BBB;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.selector{
+    display: flex;
+    flex-direction: column;
+}
+
+.selectinput{
+    min-height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 3px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+.p_column_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p_content{
+    width: 60vw;
+}
+
+.save_button{
+    position: relative;
+    width: 300px;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    background-color: #87C38F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all .1s ease-in;
+    align-self: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+
+.save_button:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.input_container_first{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    border-bottom: 1px solid #BBBBBB;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.pets_container{
+    width: 60vw;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BBBBBB;
+    margin-bottom: 20px;
+}
+
+.pet_title{
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pet_input_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pet_input{
+    min-height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 6px;
+    cursor: pointer;
+}
+
+.pet_label{
+    font-size: 18px;
+    color: #BBBBBB;
+    font-weight: 500;
+}
+
+.pet_textarea{
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    min-height: 100px;
+    padding: 5px;
+}
+
+.aboutme_textarea{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,309 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 2px 2px 2px #000;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #226F54;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+
+.menu_btn{
+    display: none;
+}
+
+.links{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.self_svg{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    color: hsl(0, 0%, 100%);
+    left: -18px;
+    transition: all .2s ease-in;
+}
+
+._text{
+    position: relative;
+    right: -18px;
+    transition: all .1s ease-in;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.column:hover ._text{
+    right: 0;
+}
+
+.column:hover .self_svg{
+    left: 0px;
+}
+
+.account{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: gainsboro;
+    border-radius: 999px;
+}
+
+.account_name{
+    margin-right: 10px;
+}
+
+.column:hover .account_name{
+    text-decoration: underline;
+}
+
+.menu{
+    display: none;
+}
+
+.closed{
+    display: none;
+}
+
+.sign_field{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin_btn{
+    background-color: #87C38F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: light;
+    cursor: pointer;
+}
+
+.or_seperator{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.signup_btn{
+    background-color: #87C38F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: light;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.signin_btn:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.signup_btn:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.acc_field{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.signout_btn{
+    background-color: #87C38F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: light;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.signout_btn:hover{
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+@media(max-width: 1000px){
+
+
+    .links{
+        display: none;
+    }
+
+    .menu_btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+    
+    .menu_btn_burger{
+        width: 40px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu_btn_burger::after,
+    .menu_btn_burger::before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .3s ease-in-out;
+    }
+
+    .menu_btn_burger::after{
+        transform: translateY(16px);
+    }
+
+    .menu_btn_burger::before{
+        transform: translateY(-16px);
+    }
+
+    .menu_btn.open .menu_btn_burger{
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }   
+
+    .menu_btn.open .menu_btn_burger::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu_btn.open .menu_btn_burger::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .closed{
+        display: none;
+    }
+
+    .openMenu{
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu_container{
+        position: absolute;
+        background-color: #226F54;
+        width: 40%;
+        border-radius: 0 0 0 20px;
+    }
+
+    .list_item_1{
+        border-bottom: 1px solid #146146;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .list_item_2{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .column{
+        margin-right: 10px;
+    }
+
+    .self_svg{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        color: hsl(0, 0%, 100%);
+        left: 0px;
+        transition: all .2s ease-in;
+    }
+    
+    ._text{
+        position: relative;
+        right: 5px;
+        transition: all .1s ease-in;
+    }
+
+    .column:hover ._text{
+        right: 10px;
+    }
+    
+    .column:hover .self_svg{
+        left: 0px;
+    }
+
+    .closed{
+        display: none;
+    }
+
+    .openMenu{
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 100px;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 80px;
+        z-index: 10;
+    }
+
+    .menu_container{
+        position: absolute;
+        background-color: #226F54;
+        width: 40%;
+        border-radius: 0 0 0 20px;
+    }
+
+    .list_item_1{
+        border-bottom: 1px solid #146146;
+        display: flex;
+        justify-content: flex-end;
+        height: 50px;
+    }
+
+    .list_item_2{
+        display: flex;
+        justify-content: flex-end;
+        height: 50px;
+    }
+
+    .column{
+        margin-right: 10px;
+    }
+
+
+
+
+}

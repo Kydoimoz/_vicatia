@@ -1,0 +1,2 @@
+ngrok http 3000 --domain kangaroo-hot-routinely.ngrok-free.app
+ngrok http 3000 --domain elegant-renewing-cattle.ngrok-free.app

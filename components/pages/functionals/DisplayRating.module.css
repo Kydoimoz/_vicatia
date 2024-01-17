@@ -1,0 +1,42 @@
+/* DisplayRating.module.css */
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 34px; /* Größere Schriftgröße für Sterne */
+    margin-right: 5px; /* Abstand zwischen den Sternen */
+  }
+  
+  .filled {
+    color: #f8d348; /* Farbe für gefüllte Sterne */
+  }
+  
+  .animateColor {
+    transition: color 0.5s; /* Animationsdauer für die Farbänderung */
+  }
+
+  .rating{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  @media(max-width: 450px){
+    .star{
+        font-size: 24px;
+    }
+
+    .rating{
+        font-size: 16px;
+    }
+  }
+
+  @media(max-width: 350px){
+    .rating{
+        display: none;
+    }
+  }
