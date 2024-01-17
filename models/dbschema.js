@@ -1,5 +1,4 @@
 import mongoose, { models, Schema } from "mongoose";
-import ExamplePics from "../../vicatia/public/images/paw.png";
 const dataSchema = new Schema({
     role: {
         type: String,
