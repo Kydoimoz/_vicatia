@@ -1,26 +1,26 @@
-import { AuthProvider } from './Providers';
+import AuthProviders from './Providers';
 import '../styles/global.css';
 import Layout from '../components/layout/layout';
-import Head from 'next/head';
 import { CookiesProvider } from 'react-cookie';
 import Banner from "../components/Cookie";
 import "../styles/auth.css";
 import "../styles/chats.css";
 import "../styles/index.css";
 import { ContextProvider } from '../context';
+import React from 'react';
 
 function Vicatia({ Component, pageProps }) {
     return (
         <CookiesProvider>
             <Banner />
-            <AuthProvider>
+            <AuthProviders>
                 <Layout>
                     <ContextProvider>
                     <Component {...pageProps} />
                     </ContextProvider>
                   
                 </Layout>
-            </AuthProvider>
+            </AuthProviders>
         </CookiesProvider>
     );
 }
