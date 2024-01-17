@@ -1,11 +1,12 @@
 import AuthProviders from './Providers';
-import '../styles/global.css';
+
 import Layout from '../components/layout/layout';
 import { CookiesProvider } from 'react-cookie';
 import Banner from "../components/Cookie";
 import "../styles/auth.css";
 import "../styles/chats.css";
 import "../styles/index.css";
+import '../styles/global.css';
 import { ContextProvider } from '../context';
 import React from 'react';
 
