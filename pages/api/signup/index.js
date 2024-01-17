@@ -66,7 +66,7 @@ export default async function handler(req, res) {
             to: email,
             subject: 'Email Verification',
            // html: `<h1>Hi ${firstName}!</h1><br><p>Click the following link to verify your email: <a href="https://kangaroo-hot-routinely.ngrok-free.app/verify/${verificationToken}">Verify Email</a></p>`,
-            html: `<h1>Hi ${firstName}!</h1><br><p>Click the following link to verify your email: <a href="http://localhost:3000/verify/${verificationToken}">Verify Email</a></p>`
+            html: `<h1>Hi ${firstName}!</h1><br><p>Click the following link to verify your email: <a href="https://vicatia.vercel.app/verify/${verificationToken}">Verify Email</a></p>`
         };
 
         const smtpTransport = nodemailer.createTransport({
