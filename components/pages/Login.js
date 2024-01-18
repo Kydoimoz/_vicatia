@@ -98,7 +98,7 @@ function Login() {
     return (
         <div className={classes.container}>
             <div className={classes.logo}>
-                <Image src={Logo} draggable="false" alt='Logo' />
+                <Link href={"/"}><Image src={Logo} draggable="false" alt='Logo' /></Link>
             </div>
             <div className={classes.reserveleft}></div>
             <div className={classes.left}>
