@@ -14,7 +14,7 @@ const CookieBanner = () => {
   }, [cookies]);
 
   const handleAccept = () => {
-    setCookie('cookieConsent', true, { secure: true, maxAge: 30 * 24 * 60 * 60, sameSite: "none" });
+    setCookie('cookieConsent', true, { secure: true, maxAge: 30 * 24 * 60 * 60 });
     setIsVisible(false);
   };
 
