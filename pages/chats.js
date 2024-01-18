@@ -6,6 +6,7 @@ import { getSession } from "next-auth/react";
 import { authOptions } from "./api/auth/[...nextauth]";
 import Header from "../components/ui/Header";
 import Footer from "../components/ui/Footer";
+import Router, { useRouter } from "next/router";
 
 const ChatEngine = dynamic(() =>
   import("react-chat-engine").then((module) => module.ChatEngine)
@@ -19,7 +20,7 @@ export default function Chats() {
   const { data: session, status } = useSession({ required: false });
   const { username, secret, setUsername, setSecret } = useContext(Context);
   const [showChat, setShowChat] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     const checkSession = async () => {
       try {
@@ -63,6 +64,12 @@ export default function Chats() {
       setSecret("Admin123!");
     }
   }, []);
+
+  useEffect(() => {
+    if(username == undefined || secret == undefined || !session?.user){
+      router.replace("/login")
+    }
+  }, [username, secret])
 
   if (!showChat) return <div></div>;
   return (
