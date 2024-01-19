@@ -140,31 +140,30 @@ useEffect(() => {
     return fullName.includes(searchQuery);
   });
 
-  // Setzen Sie die angezeigten Petsitters neu, wenn sich der Suchbegriff ändert
   setDisplayedPetsitters(filteredPetsitters.slice(0, chunkSize));
-  // Setzen Sie den Startindex zurück, um von vorne zu beginnen
+
   setStartIndex(chunkSize);
 }, [search, petsitters]);
 
 useEffect(() => {
-  // Wenn keine Städte ausgewählt wurden, zeige alle Petsitters
+
   if (selectedCities.length === 0) {
     setShowErrorMessage(false);
     setDisplayedPetsitters(petsitters.slice(0, chunkSize));
     setStartIndex(chunkSize);
-    return;  // Verlasse den Effekt, um weitere Updates zu verhindern
+    return; 
   }
 
   const filteredPetsitters = petsitters.filter((sitter) => {
     return selectedCities.includes(sitter.city);
   });
 
-  // Setze die Fehlermeldung, wenn keine Petsitter gefunden wurden
+
   setShowErrorMessage(filteredPetsitters.length === 0);
 
-  // Setze die angezeigten Petsitters neu, wenn sich die ausgewählten Städte ändern
+
   setDisplayedPetsitters(filteredPetsitters.slice(0, chunkSize));
-  // Setze den Startindex zurück, um von vorne zu beginnen
+
   setStartIndex(chunkSize);
 }, [selectedCities, petsitters]);
 useEffect(() => {
@@ -186,10 +185,9 @@ useEffect(() => {
         birthday: user.birthDate || '',
         rating: 3,
         city: user.city || '',
-        about_me: user.description, // Adjust as needed
+        about_me: user.description,
       }));
   
-      // Update the state with the mapped petsitters
       setPetsitters(mappedPetsitters);
     }
     catch(err) {

@@ -66,7 +66,8 @@ export default function Chats() {
   }, []);
 
   useEffect(() => {
-    if(username == undefined || secret == undefined){
+    if(username == undefined || secret == undefined || !session?.user){
+      
       router.replace("/login")
     }
   }, [username, secret])

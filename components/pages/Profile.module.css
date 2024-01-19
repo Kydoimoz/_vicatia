@@ -1,14 +1,16 @@
 .main{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 
 .profile_image{
     width: 300px;
     height: 300px;
+    min-width: 300px;
     max-width: 300px;
     max-height: 300px;
     object-fit: cover;
@@ -19,6 +21,7 @@
 .main_information{
     display: flex;
     color: #BBBBBB;
+    width: 100%;
 }
 
 .upload{
@@ -85,12 +88,14 @@
 .priority_row_1{
     display: flex;
     align-items: center;
+    width: 300px !important;
 }
 
 .location{
     margin-left: 15px;
     font-weight: bold;
-    margin-right: 20px;
+    width: 50%;
+    display: flex;
 }
 
 .loc{
@@ -266,4 +271,21 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+}
+
+@media (max-width: 1300px){
+    .information_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myservices{
+        margin-left: 0;
+    }
+
+    .right{
+        margin-top: 30px;
+    }
+
+    
 }

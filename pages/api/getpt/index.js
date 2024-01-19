@@ -5,7 +5,7 @@ import User from "../../../models/dbschema";
 export default async function GET(req, res) {
     try {
         await connectDB();
-        const user = await User.find({role: "petsitter"})
+        const user = await User.find({role: "petsitter", isVerified: true})
 
         if (!user) {
             return res.status(404).json({ error: 'User not found in MongoDB' });
