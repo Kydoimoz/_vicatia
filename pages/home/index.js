@@ -56,7 +56,7 @@ function Homepage() {
 
       <HomePage />
 
-      <Footer Name={session?.user?.firstName} Surname={session?.user?.lastName} Message="(Sign Out)" />
+      <Footer Name={session?.user?.firstName} Surname={session?.user?.lastName} />
     </div>
   );
 }
