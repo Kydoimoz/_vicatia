@@ -63,7 +63,7 @@ function Login() {
         axios.put(
             'https://api.chatengine.io/users/',
             {username, secret},
-            {headers: {"Private-key": "6c2cf377-3821-4a69-9bc8-c6aeb92aeb75"}}
+            {headers: {"Private-key": "e4fbbfc3-6a22-41d6-9ed3-4ed0f90baec8"}}
           )
     }
     function handleChange(event) {
